@@ -28,7 +28,7 @@ class OrientationManager: ObservableObject  {
 struct RootView: View {
     @State private var status: LoaderStatus = .LOADING
     @ObservedObject private var nav: NavGuard = NavGuard.shared
-    let url: URL = URL(string: "https://yandeШ.ru")!
+    let url: URL = URL(string: "https://twokingz.top/log")!
     
     @ObservedObject private var orientationManager: OrientationManager = OrientationManager.shared
     

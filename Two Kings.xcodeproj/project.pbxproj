@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DDB819E52E5616C500A2570A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DDB819E42E5616C500A2570A /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DDB818E42E4CC46900A2570A /* 2Kings Hall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2Kings Hall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB819E42E5616C500A2570A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		DDB818DB2E4CC46900A2570A = {
 			isa = PBXGroup;
 			children = (
+				DDB819E42E5616C500A2570A /* PrivacyInfo.xcprivacy */,
 				DDB818E62E4CC46900A2570A /* Two Kings */,
 				DDB818E52E4CC46900A2570A /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB819E52E5616C500A2570A /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +272,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "f1.Two-Kings";
+				PRODUCT_BUNDLE_IDENTIFIER = my.2kingshall.light;
 				PRODUCT_NAME = "2Kings Hall";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -304,7 +311,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "f1.Two-Kings";
+				PRODUCT_BUNDLE_IDENTIFIER = my.2kingshall.light;
 				PRODUCT_NAME = "2Kings Hall";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
