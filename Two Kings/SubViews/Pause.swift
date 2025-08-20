@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct Pause: View {
+    @Binding var pauseTapped: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image(.pauseFrame)
+                .resizable()
+                .scaledToFit()
+                .frame(width: screenWidth*0.45)
+                .overlay(
+                    VStack {
+                        Text("PAUSE")
+                            .font(Font.custom("PaytoneOne-Regular", size: screenWidth*0.05))
+                            .foregroundColor(.white)
+                            .shadow(color: .black, radius: 2)
+                            .shadow(color: .black, radius: 2)
+                        HStack {
+                            Buttons(size: 0.18, text: "Menu", textSize: 1.2)
+                                .onTapGesture {
+                                    NavGuard.shared.currentScreen = .MENU
+                                }
+                            Buttons(size: 0.18, text: "Continue", textSize: 1.2)
+                                .onTapGesture {
+                                    pauseTapped.toggle()
+                                }
+                        }
+                    }
+                )
+        }
     }
 }
 
 #Preview {
-    Pause()
+    Pause(pauseTapped: .constant(true))
 }

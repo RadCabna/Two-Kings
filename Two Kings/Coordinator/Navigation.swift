@@ -1,8 +1,12 @@
-//
-//  Navigation.swift
-//  Two Kings
-//
-//  Created by Алкександр Степанов on 13.08.2025.
-//
-
 import Foundation
+
+
+enum AvailableScreens {
+    case MENU
+    case GAME
+}
+
+class NavGuard: ObservableObject {
+    @Published var currentScreen: AvailableScreens = .MENU
+    static var shared: NavGuard = .init()
+}

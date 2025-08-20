@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct Buttons: View {
+    var size: CGFloat = 0.25
+    var text = "BACKGROUND"
+    var textSize: CGFloat = 1
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("buttonFrame")
+             .resizable()
+             .scaledToFit()
+             .frame(width: screenWidth*size)
+             .overlay(
+                 Text(text)
+                     .font(Font.custom("PaytoneOne-Regular", size: screenWidth*size*0.12*textSize))
+                     .foregroundColor(.white)
+
+             )
+             .shadow(color:.black, radius: 3, x: 2, y: 2)
     }
 }
 
