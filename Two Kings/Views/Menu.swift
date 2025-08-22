@@ -29,7 +29,7 @@ struct Menu: View {
             if isLandscape {
                 ZStack {
                     Backgrouns(backgroundNumber: 0)
-                    Image(.icon2)
+                    Image(.iconApp1)
                         .resizable()
                         .scaledToFit()
                         .frame(width: width*0.13)

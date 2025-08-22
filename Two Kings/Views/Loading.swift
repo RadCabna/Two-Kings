@@ -22,7 +22,7 @@ struct Loading: View {
                         .resizable()
                         .ignoresSafeArea()
                     VStack() {
-                        Image(.icon1)
+                        Image(.iconApp1)
                             .resizable()
                             .scaledToFit()
                             .frame(width: width*0.2)
@@ -63,7 +63,7 @@ struct Loading: View {
                         .resizable()
                         .ignoresSafeArea()
                     VStack() {
-                        Image(.icon1)
+                        Image(.iconApp1)
                             .resizable()
                             .scaledToFit()
                             .frame(width: height*0.2)
